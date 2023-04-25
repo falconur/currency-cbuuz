@@ -1,6 +1,6 @@
 # Valyuta kurslari (Markaziy bank API)
 
-Ushbu kutubxona orqali markaziy bankning [API](https://cbu.uz/uzc/arkhiv-kursov-valyut/json/)si orqali valyuta kurslarini olishingiz mumkin.
+Ushbu kutubxona orqali markaziy bankning [API](https://cbu.uz/uz/arkhiv-kursov-valyut/veb-masteram/)si orqali valyuta kurslarini olishingiz mumkin.
 
 ## Oʻrnatish
 
