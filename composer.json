@@ -1,0 +1,21 @@
+{
+    "name": "falconur/currency-cbuuz",
+    "description": "Currency rate from CBU UZ",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Falconur\\CurrencyCbuUz\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nuriddin Kamardinov",
+            "email": "falconur98@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
