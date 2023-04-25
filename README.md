@@ -33,16 +33,16 @@ Natija `Currency` sinfida qaytadi.
 `Currency` sinfidagi xususiyatlar:
 
 1. `id` – Tartib raqami;
-2. `Code` – Valyutaning sonli kodi. Masalan: 840, 978, 643 va boshqalar;
-3. `Ccy` – Valyutaning ramzli kodi (alfa-3). Masalan: USD, EUR, RUB va boshqalar;
-4. `CcyNm_RU` – Valyutaning rus tilidagi nomi;
-5. `CcyNm_UZ` – Valyutaning o‘zbek (lotin) tilidagi nomi;
-6. `CcyNm_UZC` – Valyutaning o‘zbek (kirillitsa) tilidagi nomi;
-7. `CcyNm_EN` – Valyutaning ingliz tilidagi nomi;
-8. `Nominal` – Valyutaning birliklar soni;
-9. `Rate` – Valyuta kursi;
-10. `Diff` – Valyutlar kurslari farqi;
-11. `Date` – Kursning amal qilish sanasi.
+2. `number` – Valyutaning sonli kodi. Masalan: 840, 978, 643 va boshqalar;
+3. `code` – Valyutaning ramzli kodi (alfa-3). Masalan: USD, EUR, RUB va boshqalar;
+4. `name_uz` – Valyutaning o‘zbek (lotin) tilidagi nomi;
+5. `name_ru` – Valyutaning rus tilidagi nomi;
+6. `name_uzc` – Valyutaning o‘zbek (kirillitsa) tilidagi nomi;
+7. `name_en` – Valyutaning ingliz tilidagi nomi;
+8. `nominal` – Valyutaning birliklar soni;
+9. `rate` – Valyuta kursi;
+10. `diff` – Valyutlar kurslari farqi;
+11. `date` – Kursning amal qilish sanasi.
 
 ### Valyuta turlari
 
