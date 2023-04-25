@@ -34,7 +34,7 @@ class Currency
                 'Nominal' => $this->nominal = $value,
                 'Rate' => $this->rate = $value,
                 'Diff' => $this->diff = $value,
-                'Date' => $this->date = $value,
+                'Date' => $this->date = date('Y-m-d', strtotime($value)),
                 'id' => $this->id = $value,
                 'Code' => $this->number = $value,
                 default => $this->{$key} = $value,
