@@ -4,17 +4,17 @@ namespace Falconur\CurrencyCbuUz;
 
 class Currency
 {
-    public $id;
-    public $number;
-    public $code;
-    public $name_ru;
-    public $name_uz;
-    public $name_uzc;
-    public $name_en;
-    public $nominal;
-    public $rate;
-    public $diff;
-    public $date;
+    public int $id;
+    public int $number;
+    public string $code;
+    public string $name_ru;
+    public string $name_uz;
+    public string $name_uzc;
+    public string $name_en;
+    public int $nominal;
+    public float $rate;
+    public float $diff;
+    public string $date;
 
     public function __construct($json_data)
     {
@@ -23,20 +23,21 @@ class Currency
         }
     }
 
-    public function set($data) {
-        foreach ($data AS $key => $value) {
+    public function set($data)
+    {
+        foreach ($data as $key => $value) {
             match ($key) {
                 'CcyNm_RU' => $this->name_ru = $value,
                 'CcyNm_UZ' => $this->name_uz = $value,
                 'CcyNm_UZC' => $this->name_uzc = $value,
                 'CcyNm_EN' => $this->name_en = $value,
                 'Ccy' => $this->code = $value,
-                'Nominal' => $this->nominal = $value,
-                'Rate' => $this->rate = $value,
-                'Diff' => $this->diff = $value,
+                'Nominal' => $this->nominal = (int)$value,
+                'Rate' => $this->rate = (float)$value,
+                'Diff' => $this->diff = (float)$value,
                 'Date' => $this->date = date('Y-m-d', strtotime($value)),
-                'id' => $this->id = $value,
-                'Code' => $this->number = $value,
+                'id' => $this->id = (int)$value,
+                'Code' => $this->number = (int)$value,
                 default => $this->{$key} = $value,
             };
         }
