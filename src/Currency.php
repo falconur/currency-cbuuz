@@ -5,7 +5,7 @@ namespace Falconur\CurrencyCbuUz;
 class Currency
 {
     public int $id;
-    public int $number;
+    public string $number;
     public string $code;
     public string $name_ru;
     public string $name_uz;
@@ -37,7 +37,7 @@ class Currency
                 'Diff' => $this->diff = (float)$value,
                 'Date' => $this->date = date('Y-m-d', strtotime($value)),
                 'id' => $this->id = (int)$value,
-                'Code' => $this->number = (int)$value,
+                'Code' => $this->number = $value,
                 default => $this->{$key} = $value,
             };
         }
