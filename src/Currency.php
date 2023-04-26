@@ -23,7 +23,7 @@ class Currency
         }
     }
 
-    public function set($data)
+    public function set($data): void
     {
         foreach ($data as $key => $value) {
             match ($key) {
